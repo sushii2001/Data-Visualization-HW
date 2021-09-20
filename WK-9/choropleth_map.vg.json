@@ -20,7 +20,8 @@
         "key": "Country",
         "fields": ["Total Instagram users (MM)"]
       }
-    }
+    },
+    {"calculate": "datum['Total Instagram users (MM)']/datum['Total population (MM)']", "as": "Total Instagram users (normalised)"}
   ],
   "projection": {
     "type": "equirectangular"
@@ -33,8 +34,8 @@
         "field": "Total Instagram users (MM)", "type": "quantitative", 
         "scale": { 
           "type": "threshold", 
-          "domain": [0, 10, 50, 100], 
-          "range": ["#ffffff", "#ffdf9e", "#e56969", "#c1558b", "#8a49a1"] 
+          "domain": [10, 30, 70, 100, 120], 
+          "range": [ "#f6f6f6", "#ffdf9e", "#e56969", "#c1558b", "#a33b92", "#8a49a1"] 
         } 
     }, 
     "tooltip": [ 
