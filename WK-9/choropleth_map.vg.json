@@ -27,7 +27,7 @@
         }
       }
     },
-    
+
     {
       "transform": [
         {
@@ -48,8 +48,8 @@
             "field": "Total users normalised (%)", "type": "quantitative", 
             "scale": { 
               "type": "threshold", 
-              "domain": [10, 20, 40, 50, 60], 
-              "range": [ "#f6f6f6", "#ffdf9e", "#e56969", "#c1558b", "#a33b92", "#8a49a1"] 
+              "domain": [10, 20, 30, 40, 50], 
+              "range": ["#ffefcf","#ffdf9e", "#e56969", "#c1558b", "#a33b92", "#8a49a1"] 
             } 
         }, 
         "tooltip": [ 
