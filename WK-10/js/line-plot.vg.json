@@ -1,0 +1,88 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Social Media Growth rate",
+        "color": "#ffffff"
+    },
+
+    "config": {
+        "background": "#2b2b2b",
+        "axis": {
+          "labelColor": "#ffffff",
+          "titleColor": "#ffffff",
+          "grid": false,
+          "domain": false
+        },
+        "legend": {
+          "labelColor": "#ffffff",
+          "titleColor": "#ffffff"
+        },
+        "view": {
+          "fill": "#2b2b2b",
+          "stroke": "transparent"
+        },
+        "style":{
+          "label":{"align": "center", "baseline":"line-bottom", "color":"white"}
+        } 
+    },
+
+    "width": 450,
+    "height": 400,
+    "padding": 15,
+
+    "data": {
+      "url": "https://raw.githubusercontent.com/sushii2001/Data-Visualization-2/master/sources/growth-rate.csv"
+    },
+    "layer":[
+      {      
+        "mark": {
+          "type": "line",
+          "point": true
+        }, 
+      "params": [{
+        "name": "Social Media",
+        "select": {"type": "point", "fields": ["Social Media"]},
+        "bind":"scales" 
+      }],
+    "encoding": {
+        "color": { 
+            "field": "Social Media", "type": "nominal"
+        },
+        "tooltip": [ 
+            {"field": "Social Media", "type": "nominal"}, 
+            {"field": "Year", "type": "temporal", "format": "%Y"},
+            {"field": "Total Instagram users (MM)", "type": "quantitative"}
+        ],
+        "x": {
+            "field": "Year",
+            "type": "temporal",
+            "axis":{"domain": false, "format": "%Y", "tickSize":0},
+            "title": "Year"
+        },
+        "y": {
+            "field": "Total Instagram users (MM)",
+            "type": "quantitative",
+            "title": "Total Instagram users (MM)"
+        },
+        "opacity":{
+          "condition":{"param": "Social Media", "value": 1},
+          "value": 0.2
+        }
+      }
+    },
+    {
+      "encoding": {
+        "x": {"aggregate": "max", "field": "Year", "type": "temporal" },
+        "y": {"aggregate": {"argmax": "Year"}, "field": "Total Instagram users (MM)", "type": "quantitative"}
+      }, 
+      "layer": [{
+        "mark": {"type": "circle"}
+      }, {
+        "mark": {"type": "text", "align": "right", "dx": 4, "color": "white"},
+        "encoding": {"text": {"field": "Total Instagram users (MM)", "type": "nominal"}}
+      }]
+    }
+  ]
+
+}
+  

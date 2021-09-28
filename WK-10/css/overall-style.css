@@ -1,0 +1,32 @@
+body{
+	font-family: sans-serif;
+	background-color: rgb(221, 221, 221);
+  }
+
+.page{
+	height: 1500px;
+	width: 900px;    
+	background-color: #ffffff;
+	border-top: 50px solid #FCF7FE;
+	margin: auto;
+	padding: 50px;
+	padding-top: 35px;
+ }
+
+.pure-g{
+	margin-bottom: 20px;
+}
+
+.big-space{
+	text-align: right;
+	margin-top: 180px;
+}
+
+/* === Font format ===*/
+.header h2, h1{
+	color: rgb(20, 20, 20);
+}
+
+.description{
+	color: rgb(31, 26, 26);
+}
