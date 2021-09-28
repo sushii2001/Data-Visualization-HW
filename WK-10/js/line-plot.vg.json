@@ -69,18 +69,6 @@
           "value": 0.2
         }
       }
-    },
-    {
-      "encoding": {
-        "x": {"aggregate": "max", "field": "Year", "type": "temporal" },
-        "y": {"aggregate": {"argmax": "Year"}, "field": "Total Instagram users (MM)", "type": "quantitative"}
-      }, 
-      "layer": [{
-        "mark": {"type": "circle"}
-      }, {
-        "mark": {"type": "text", "align": "right", "dx": 4, "color": "white"},
-        "encoding": {"text": {"field": "Total Instagram users (MM)", "type": "nominal"}}
-      }]
     }
   ]
 
