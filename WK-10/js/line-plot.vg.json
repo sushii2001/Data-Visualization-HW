@@ -26,12 +26,12 @@
         } 
     },
 
-    "width": 450,
-    "height": 400,
+    "width": 350,
+    "height": 200,
     "padding": 15,
 
     "data": {
-      "url": "https://raw.githubusercontent.com/sushii2001/Data-Visualization-2/master/sources/growth-rate.csv"
+      "url": "https://raw.githubusercontent.com/sushii2001/Data-Visualization-HW/master/WK-10/sources/growth-rate.csv"
     },
     "layer":[
       {      
