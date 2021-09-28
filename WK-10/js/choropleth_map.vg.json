@@ -57,7 +57,7 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/sushii2001/Data-Visualization-HW/master/WK-9/instagram-users.csv"
+              "url": "https://raw.githubusercontent.com/sushii2001/Data-Visualization-HW/master/WK-10/sources/instagram-users.csv"
             },
             "key": "Country",
             "fields": ["Total Instagram users (MM)","Total population (MM)", "Total users normalised (%)"]
