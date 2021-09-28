@@ -30,3 +30,8 @@ body{
 .description{
 	color: rgb(31, 26, 26);
 }
+
+.detail{
+	color: rgb(102, 102, 102);
+	font-size: small;
+}
