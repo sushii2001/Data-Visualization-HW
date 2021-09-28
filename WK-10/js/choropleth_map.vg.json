@@ -27,7 +27,7 @@
   "padding": 15,
 
   "data": {
-    "url": "https://raw.githubusercontent.com/sushii2001/Data-Visualization-HW/master/WK-9/ne_110m_admin_0_countries.topojson",
+    "url": "https://raw.githubusercontent.com/sushii2001/Data-Visualization-HW/master/WK-10/topojson/ne_110m_admin_0_countries.topojson",
     "format": {
           "type": "topojson",
           "feature": "ne_110m_admin_0_countries"
@@ -57,7 +57,7 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/sushii2001/Data-Visualization-HW/master/WK-10/sources/instagram-users.csv"
+              "url": "https://raw.githubusercontent.com/sushii2001/Data-Visualization-HW/master/WK-9/instagram-users.csv"
             },
             "key": "Country",
             "fields": ["Total Instagram users (MM)","Total population (MM)", "Total users normalised (%)"]
