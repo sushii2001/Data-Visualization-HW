@@ -57,10 +57,10 @@
         <div class="pure-g">
             <div class="pure-u-1-1">
                 <div class="header">
-                    <h2>Line plot:</h2>
+                    <h2>Interactive plots:</h2>
                 </div>
                 <div class="description">          
-                    <p>Showing the growth rate of different social media platforms over the years</p>
+                    <p>Showing ranking of different social media and the growth rate each platform over the years</p>
                 </div>
                 <div class="detail">
                     <p>Click on the lines to highlight each social media</p>
@@ -69,6 +69,9 @@
         </div>
         <div class="pure-u-2-3">
             <div id="viz2" class="vis-container"></div>
+        </div>
+        <div class="pure-u-2-3">
+            <div id="viz3" class="vis-container"></div>
         </div>
         <!----=== End Second section ===-->
 
@@ -81,18 +84,21 @@
         </footer>
         </div>
     </div>
-
 </div> <!-- end page -->
 
 <script type="text/javascript">
     var viz1 = "js/choropleth_map.vg.json";
     var viz2 = "js/line-plot.vg.json";
+    var viz3 = "js/horrizontal_bar.vg.json";
 
 
     vegaEmbed('#viz1', viz1, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
     vegaEmbed('#viz2', viz2, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    vegaEmbed('#viz3', viz3, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 </script>
