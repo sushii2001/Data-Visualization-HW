@@ -37,7 +37,8 @@
       {      
         "mark": {
           "type": "line",
-          "point": true
+          "point": true,
+          "cursor": "pointer"
         }, 
       "params": [{
         "name": "Social Media",
