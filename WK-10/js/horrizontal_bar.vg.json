@@ -32,7 +32,7 @@
         "url": "https://raw.githubusercontent.com/sushii2001/Data-Visualization-HW/master/WK-10/sources/ranking.csv"
       },
     "encoding": {
-      "y": {"field": "Social Media", "type": "nominal", "sort": {"order":"descending","field": "Rank"} , "title": null},
+      "y": {"field": "Social Media", "type": "nominal", "sort": {"op": "max","field": "Rank"} , "title": null},
       "x": {"field": "Total Instagram users (MM)", "type": "quantitative", "title": null},
       "fillOpacity": {
         "condition": {"param": "select", "value": 1},
@@ -40,7 +40,8 @@
       },
       "tooltip": [ 
             {"field": "Social Media", "type": "nominal"}, 
-            {"field": "Total Instagram users (MM)", "type": "quantitative"}
+            {"field": "Total Instagram users (MM)", "type": "quantitative"},
+            {"field": "Rank", "type": "quantitative"}
       ]
     },
     "layer": [{
