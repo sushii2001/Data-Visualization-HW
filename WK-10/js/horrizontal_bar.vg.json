@@ -34,18 +34,27 @@
     "encoding": {
       "y": {"field": "Social Media", "type": "nominal", "sort": "x", "title": null},
       "x": {"field": "Total Instagram users (MM)", "type": "quantitative", "title": null},
+      "fillOpacity": {
+        "condition": {"param": "select", "value": 1},
+        "value": 0.3
+      },
       "tooltip": [ 
             {"field": "Social Media", "type": "nominal"}, 
             {"field": "Total Instagram users (MM)", "type": "quantitative"}
       ]
     },
     "layer": [{
-      "mark": "bar", 
+      "mark": {
+        "type": "bar",
+        "stroke": "black",
+        "cursor": "pointer"
+      }, 
       "params": [{
-        "name": "Social Media",
-        "select": {"type": "point", "fields": ["Social Media"]},
-        "bind": "legend" 
-      }],
+        "name": "highlight",
+        "select": {"type": "point", "on": "mouseover"}
+      },
+      {"name": "select", "select": "point"}
+    ],
       "encoding": {
         "color": {
           "field": "Total Instagram users (MM)",
