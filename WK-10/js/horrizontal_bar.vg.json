@@ -60,7 +60,7 @@
         "color": {
           "field": "Total Instagram users (MM)",
           "type": "quantitative",
-          "title": "Total user count",
+          "title": "Total user count (MM)",
           "scale": { 
             "type": "threshold", 
             "domain": [300, 600, 900, 1200, 1500], 
